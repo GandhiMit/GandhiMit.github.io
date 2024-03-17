@@ -31,13 +31,15 @@
       margin-top: 0;
     }
     .photo {
-      width: 30%;
-      text-align: right;
+      width: 200px; /* Set width to desired square size */
+      height: 250px; /* Set height to desired square size */
+      overflow: hidden;
+      border-radius: 1px;
     }
     .photo img {
-      border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     .section {
       margin-bottom: 20px;
@@ -52,12 +54,17 @@
     .skills {
       list-style-type: none;
       padding: 0;
-    }
-    .skills li {
-      margin-bottom: 5px;
+      display: flex;
+      flex-wrap: wrap;
     }
     .skill-category {
-      font-weight: bold;
+      flex: 1;
+      margin-right: 20px;
+    }
+    .skill-category h3 {
+      margin-bottom: 5px;
+    }
+    .skills li {
       margin-bottom: 5px;
     }
     .rating {
@@ -69,84 +76,155 @@
   <div class="container">
     <div class="header">
       <div class="contact-details">
-        <h1>Your Name</h1>
-        <p>Email: example@example.com</p>
-        <p>Phone: 123-456-7890</p>
-        <p>Address: 123 Street, City, Country</p>
+        <h1>Gandhi Mit</h1>
+        <p>Dresden, Saxony, Germany</p>
+        <p>Email: mitgandhi2698@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/gandhi-mit-b236aa160">linkedin.com/in/gandhi-mit-b236aa160</a></p>
+        <p>Phone: 01798294083</p>
       </div>
       <div class="photo">
-        <img src="your-photo.jpg" alt="Your Photo" width="150">
+        <img src="Mit_professional.jpg" alt="Your Photo" width="150">
       </div>
     </div>
 
     <section class="section">
-      <h2>About Me</h2>
-      <div class="section-content">
-        <p>I am a passionate and dedicated individual with a strong background in web development. I am always eager to learn new technologies and expand my skillset.</p>
-      </div>
-    </section>
+        <h2>About Me</h2>
+        <div class="section-content">
+          <p>Passionate about merging the realms of data science and engineering, I'm a Master's student at Technische Universität Dresden, sculpting the future. My impactful internship at Bosch Rexroth refined my machine learning finesse and pioneered inventive data drift detection techniques.</p>
+          <p>Navigating through the tech landscape, I wield expertise in Metaheuristics Algorithms, Tensorflow, and Keras for machine learning. From fortifying desktop systems to orchestrating modular inspection robots, I apply cutting-edge tech to conquer real-world challenges.</p>
+          <p>Fluent in C++, Python, Java, and C# with .NET framework, my proficiency extends beyond code—I seamlessly traverse diverse operating systems, including the intricate world of Linux. In the cloud realm, AWS is my playground, complemented by hands-on experience in Docker and Kubernetes.</p>
+          <p>Now, add SQL and DynamoDB to the mix, and you have a tech enthusiast who not only codes but masters the orchestration of data. From navigating operating systems to creating frameworks, I am enthusiastic about every step of the tech journey. Let's collaborate and sculpt innovative solutions for today's intricate challenges!</p>
+        </div>
+      </section>
 
     <section class="section">
       <h2>Experience</h2>
       <div class="section-content">
-        <h3>Senior Web Developer</h3>
-        <p>XYZ Company - June 2018 to Present</p>
+        <h3>Student Research Assistant - Wissenschaftliche Mitarbeiterin</h3>
+        <p>Technische Universität Dresden</p>
+        <p>Oct 2022 - Present (1 year 6 months)</p>
         <ul>
-          <li>Developed responsive websites using HTML5, CSS3, JavaScript, and various frameworks.</li>
-          <li>Collaborated with designers and backend developers to implement website features and enhancements.</li>
-          <li>Optimized website performance and ensured cross-browser compatibility.</li>
+          <li> Experienced Software Development Engineer proficient in C++, C#, and .NET Framework (4.5-7.2).</li>
+          <li> Proven track record in designing and optimizing software solutions.</li>
+          <li> Adapt at full software development lifecycle, collaborative problem-solving, and meeting project milestones.</li>
         </ul>
 
-        <h3>Junior Web Developer</h3>
-        <p>ABC Agency - January 2016 to May 2018</p>
+        <h3>Data Science and Engineer Intern</h3>
+        <p>Bosch Rexroth</p>
+        <p>Jul 2023 - Dec 2023 (6 months)</p>
         <ul>
-          <li>Assisted in the development of web applications and maintained existing websites.</li>
-          <li>Participated in code reviews and provided feedback to team members.</li>
-          <li>Resolved technical issues and bugs reported by clients.</li>
+          <li>Optimized data science cloud deployment using Linux expertise.</li>
+          <li> Spearheaded AWS serverless app, enhanced efficiency, and scalability.</li>
+          <li> Conducted impactful research on model performance analytics tools.</li>
+          <li>Identified anomalies in the ML encoder-decoder model, collaborating seamlessly with peers.</li>
+          <li>Innovated data drift detection, ensuring continuous optimization.</li>
+          <li>Managed SQL, and Dynamodb for robust data solutions.</li>
+          <li>Streamlined data pipelines contributing to enhanced efficiency.</li>
+          <li>Actively troubleshoot and fine-tuned databases for optimal performance.</li>
         </ul>
+
+        <h3>Student Research Assistant - Wissenschaftliche Mitarbeiterin</h3>
+        <p>Technische Universität Dresden</p>
+        <p>Aug 2022 - Jun 2023 (11 months)</p>
+        <ul>
+          <li>Developed custom Fusion360 plugins using API to enhance functionality.</li>
+          <li>Conducted research in exploring new sequencing optimization methodologies.</li>
+          <li>Applied metaheuristics programming techniques to develop software and optimize solutions.</li>
+        </ul>
+
+        <h3>Working Student Software Engineer</h3>
+        <p>Technische Universität Dresden</p>
+        <p>Jul 2022 - Sep 2022 (3 months)</p>
+
+        <h3>Software Automation Engineer</h3>
+        <p>gemcomputers</p>
+        <p>Apr 2021 - Jul 2022 (1 year 4 months)</p>
+        <ul>
+          <li>Led the development of tailored solutions for desktop systems, showcasing expertise in crafting efficient and client-specific applications.</li>
+          <li>Provided impactful data analytics services, effectively identifying and abstracting problems to deliver well-informed and probable solutions.</li>
+        </ul>
+
+        <h3>CAE Trainee Engineer</h3>
+        <p>Eleation</p>
+        <p>Oct 2020 - Nov 2020 (2 months)</p>
       </div>
     </section>
 
     <section class="section">
       <h2>Education</h2>
       <div class="section-content">
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>University Name - Graduated May 2016</p>
+        <h3>Technische Universität Dresden</h3>
+        <p>Master of Science - MS, Computational Science</p>
+        <p>Oct 2021 - Oct 2024</p>
+
+        <h3>G H Patel College of Engineering & Technology</h3>
+        <p>Bachelor's degree, Mechatronics, Robotics, and Automation Engineering</p>
+        <p>2016 - 2020</p>
+
+        <h3>Shakti Higher Secondary School</h3>
+        <p>2015 - 2016</p>
+
+        <h3>Saint Mary's School</h3>
+        <p>S.S.C</p>
+        <p>2013 - 2014</p>
       </div>
     </section>
 
     <section class="section">
-      <h2>Skills</h2>
-      <div class="section-content">
-        <div class="skill-category">Programming Languages</div>
-        <ul class="skills">
-          <li>HTML5 - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>CSS3 - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>JavaScript - <span class="rating">&#11044;&#11044;</span></li>
-          <li>Python - <span class="rating">&#11044;&#11044;</span></li>
-          <li>Java - <span class="rating">&#11044;&#11044;</span></li>
-          <li>C++ - <span class="rating">&#11044;&#11044;</span></li>
-        </ul>
-        
-        <div class="skill-category">Frameworks & Libraries</div>
-        <ul class="skills">
-          <li>React - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>Node.js - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>Bootstrap - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>jQuery - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>Express.js - <span class="rating">&#11044;&#11044;</span></li>
-        </ul>
-        
-        <div class="skill-category">Tools & Technologies</div>
-        <ul class="skills">
-          <li>Git - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>Webpack - <span class="rating">&#11044;&#11044;</span></li>
-          <li>Docker - <span class="rating">&#11044;&#11044;</span></li>
-          <li>MySQL - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-          <li>MongoDB - <span class="rating">&#11044;&#11044;&#11044;</span></li>
-        </ul>
-      </div>
-    </section>
-  </div>
-</body>
-</html>
+        <h2>Licenses & Certifications</h2>
+        <div class="section-content">
+          <ul>
+            <li>Python Object-Oriented Programming - LinkedIn</li>
+            <li>Deep Learning: Getting Started - LinkedIn</li>
+            <li>Artificial Intelligence Foundations: Neural Networks - LinkedIn</li>
+            <li>AWS for Developers: Step Functions - LinkedIn</li>
+            <li>Learning REST APIs - LinkedIn</li>
+            <li>Artificial Intelligence Foundations: Thinking Machines - LinkedIn</li>
+            <li>Learning GitLab - LinkedIn</li>
+            <li>Recurrent Neural Networks - LinkedIn</li>
+            <li>Developing Mental Toughness for Leadership - LinkedIn</li>
+            <li>Neural Networks and Convolutional Neural Networks Essential Training - LinkedIn</li>
+            <li>Speaking Confidently and Effectively - LinkedIn</li>
+            <li>Build GANs and Diffusion Models with TensorFlow and PyTorch - LinkedIn</li>
+            <li>Reinforcement Learning Foundations - LinkedIn</li>
+            <!-- Add more certifications as needed -->
+          </ul>
+        </div>
+      </section>
+  
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="section-content">
+          <div class="skills">
+            <div class="skill-category">
+              <h3>Operating Systems</h3>
+              <ul>
+                <li>Linux</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Databases</h3>
+              <ul>
+                <li>SQL</li>
+                <li>Amazon Dynamodb</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Development</h3>
+              <ul>
+                <li>Developer</li>
+                <li>Git</li>
+                <li>Docker</li>
+                <li>.NET Framework</li>
+                <li>Java</li>
+                <li>Python (Programming Language)</li>
+                <li>Eclipse</li>
+                <!-- Add more skills as needed -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  </html>
