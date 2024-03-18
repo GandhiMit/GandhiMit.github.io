@@ -17,6 +17,14 @@
       background-color: #f9f9f9;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
+    .left-column {
+      width: 70%;
+    }
+    .right-column {
+      width: 30%;
+      padding-left: 20px;
     }
     .header {
       display: flex;
@@ -25,21 +33,18 @@
       margin-bottom: 20px;
     }
     .contact-details {
-      width: 50%;
+      width: 70%;
     }
     .contact-details h1 {
       margin-top: 0;
     }
     .photo {
-      width: 200px; /* Set width to desired square size */
-      height: 250px; /* Set height to desired square size */
-      overflow: hidden;
-      border-radius: 1px;
+      width: 30%;
+      height: auto;
     }
     .photo img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      border-radius: 8px;
     }
     .section {
       margin-bottom: 20px;
@@ -54,12 +59,9 @@
     .skills {
       list-style-type: none;
       padding: 0;
-      display: flex;
-      flex-wrap: wrap;
     }
     .skill-category {
-      flex: 1;
-      margin-right: 20px;
+      margin-bottom: 10px;
     }
     .skill-category h3 {
       margin-bottom: 5px;
@@ -74,20 +76,22 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="contact-details">
-        <h1>Gandhi Mit</h1>
-        <p>Dresden, Saxony, Germany</p>
-        <p>Email: mitgandhi2698@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/gandhi-mit-b236aa160">linkedin.com/in/gandhi-mit-b236aa160</a></p>
-        <p>Phone: 01798294083</p>
+    <div class="left-column">
+      <div class="header">
+        <div class="contact-details">
+          <h1>Gandhi Mit</h1>
+          <p>Dresden, Saxony, Germany</p>
+          <p>Email: mitgandhi2698@gmail.com</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/gandhi-mit-b236aa160">linkedin.com/in/gandhi-mit-b236aa160</a></p>
+          <p>Phone: 01798294083</p>
+          <p> Motivation: <b>Design</b>, <b>Derive</b>, and <b>Discover</b></p> 
+        </div>
+        <div class="photo">
+          <img src="your-photo.jpg" alt="Your Photo">
+        </div>
       </div>
-      <div class="photo">
-        <img src="Mit_professional.jpg" alt="Your Photo" width="150">
-      </div>
-    </div>
-
-    <section class="section">
+      
+      <section class="section">
         <h2>About Me</h2>
         <div class="section-content">
           <p>Passionate about merging the realms of data science and engineering, I'm a Master's student at Technische Universität Dresden, sculpting the future. My impactful internship at Bosch Rexroth refined my machine learning finesse and pioneered inventive data drift detection techniques.</p>
@@ -97,80 +101,81 @@
         </div>
       </section>
 
-    <section class="section">
-      <h2>Experience</h2>
-      <div class="section-content">
-        <h3>Student Research Assistant - Wissenschaftliche Mitarbeiterin</h3>
-        <p>Technische Universität Dresden</p>
-        <p>Oct 2022 - Present (1 year 6 months)</p>
-        <ul>
-          <li> Experienced Software Development Engineer proficient in C++, C#, and .NET Framework (4.5-7.2).</li>
-          <li> Proven track record in designing and optimizing software solutions.</li>
-          <li> Adapt at full software development lifecycle, collaborative problem-solving, and meeting project milestones.</li>
-        </ul>
 
-        <h3>Data Science and Engineer Intern</h3>
-        <p>Bosch Rexroth</p>
-        <p>Jul 2023 - Dec 2023 (6 months)</p>
-        <ul>
-          <li>Optimized data science cloud deployment using Linux expertise.</li>
-          <li> Spearheaded AWS serverless app, enhanced efficiency, and scalability.</li>
-          <li> Conducted impactful research on model performance analytics tools.</li>
-          <li>Identified anomalies in the ML encoder-decoder model, collaborating seamlessly with peers.</li>
-          <li>Innovated data drift detection, ensuring continuous optimization.</li>
-          <li>Managed SQL, and Dynamodb for robust data solutions.</li>
-          <li>Streamlined data pipelines contributing to enhanced efficiency.</li>
-          <li>Actively troubleshoot and fine-tuned databases for optimal performance.</li>
-        </ul>
+      <section class="section">
+        <h2>Experience</h2>
+        <div class="section-content">
+          <h3>Student Research Assistant - Wissenschaftliche Mitarbeiterin</h3>
+          <p>Technische Universität Dresden</p>
+          <p>Oct 2022 - Present (1 year 6 months)</p>
+          <ul>
+            <li> Experienced Software Development Engineer proficient in C++, C#, and .NET Framework (4.5-7.2).</li>
+            <li> Proven track record in designing and optimizing software solutions.</li>
+            <li> Adapt at full software development lifecycle, collaborative problem-solving, and meeting project milestones.</li>
+          </ul>
+  
+          <h3>Data Science and Engineer Intern</h3>
+          <p>Bosch Rexroth</p>
+          <p>Jul 2023 - Dec 2023 (6 months)</p>
+          <ul>
+            <li>Optimized data science cloud deployment using Linux expertise.</li>
+            <li> Spearheaded AWS serverless app, enhanced efficiency, and scalability.</li>
+            <li> Conducted impactful research on model performance analytics tools.</li>
+            <li>Identified anomalies in the ML encoder-decoder model, collaborating seamlessly with peers.</li>
+            <li>Innovated data drift detection, ensuring continuous optimization.</li>
+            <li>Managed SQL, and Dynamodb for robust data solutions.</li>
+            <li>Streamlined data pipelines contributing to enhanced efficiency.</li>
+            <li>Actively troubleshoot and fine-tuned databases for optimal performance.</li>
+          </ul>
+  
+          <h3>Student Research Assistant - Wissenschaftliche Mitarbeiterin</h3>
+          <p>Technische Universität Dresden</p>
+          <p>Aug 2022 - Jun 2023 (11 months)</p>
+          <ul>
+            <li>Developed custom Fusion360 plugins using API to enhance functionality.</li>
+            <li>Conducted research in exploring new sequencing optimization methodologies.</li>
+            <li>Applied metaheuristics programming techniques to develop software and optimize solutions.</li>
+          </ul>
+  
+          <h3>Working Student Software Engineer</h3>
+          <p>Technische Universität Dresden</p>
+          <p>Jul 2022 - Sep 2022 (3 months)</p>
+  
+          <h3>Software Automation Engineer</h3>
+          <p>gemcomputers</p>
+          <p>Apr 2021 - Jul 2022 (1 year 4 months)</p>
+          <ul>
+            <li>Led the development of tailored solutions for desktop systems, showcasing expertise in crafting efficient and client-specific applications.</li>
+            <li>Provided impactful data analytics services, effectively identifying and abstracting problems to deliver well-informed and probable solutions.</li>
+          </ul>
+  
+          <h3>CAE Trainee Engineer</h3>
+          <p>Eleation</p>
+          <p>Oct 2020 - Nov 2020 (2 months)</p>
+        </div>
+      </section>
+      
+      <section class="section">
+        <h2>Education</h2>
+        <div class="section-content">
+          <h3>Technische Universität Dresden</h3>
+          <p>Master of Science - MS, Computational Science</p>
+          <p>Oct 2021 - Oct 2024</p>
+  
+          <h3>G H Patel College of Engineering & Technology</h3>
+          <p>Bachelor's degree, Mechatronics, Robotics, and Automation Engineering</p>
+          <p>2016 - 2020</p>
+  
+          <h3>Shakti Higher Secondary School</h3>
+          <p>2015 - 2016</p>
+  
+          <h3>Saint Mary's School</h3>
+          <p>S.S.C</p>
+          <p>2013 - 2014</p>
+        </div>
+      </section>
 
-        <h3>Student Research Assistant - Wissenschaftliche Mitarbeiterin</h3>
-        <p>Technische Universität Dresden</p>
-        <p>Aug 2022 - Jun 2023 (11 months)</p>
-        <ul>
-          <li>Developed custom Fusion360 plugins using API to enhance functionality.</li>
-          <li>Conducted research in exploring new sequencing optimization methodologies.</li>
-          <li>Applied metaheuristics programming techniques to develop software and optimize solutions.</li>
-        </ul>
-
-        <h3>Working Student Software Engineer</h3>
-        <p>Technische Universität Dresden</p>
-        <p>Jul 2022 - Sep 2022 (3 months)</p>
-
-        <h3>Software Automation Engineer</h3>
-        <p>gemcomputers</p>
-        <p>Apr 2021 - Jul 2022 (1 year 4 months)</p>
-        <ul>
-          <li>Led the development of tailored solutions for desktop systems, showcasing expertise in crafting efficient and client-specific applications.</li>
-          <li>Provided impactful data analytics services, effectively identifying and abstracting problems to deliver well-informed and probable solutions.</li>
-        </ul>
-
-        <h3>CAE Trainee Engineer</h3>
-        <p>Eleation</p>
-        <p>Oct 2020 - Nov 2020 (2 months)</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Education</h2>
-      <div class="section-content">
-        <h3>Technische Universität Dresden</h3>
-        <p>Master of Science - MS, Computational Science</p>
-        <p>Oct 2021 - Oct 2024</p>
-
-        <h3>G H Patel College of Engineering & Technology</h3>
-        <p>Bachelor's degree, Mechatronics, Robotics, and Automation Engineering</p>
-        <p>2016 - 2020</p>
-
-        <h3>Shakti Higher Secondary School</h3>
-        <p>2015 - 2016</p>
-
-        <h3>Saint Mary's School</h3>
-        <p>S.S.C</p>
-        <p>2013 - 2014</p>
-      </div>
-    </section>
-
-    <section class="section">
+      <section class="section">
         <h2>Licenses & Certifications</h2>
         <div class="section-content">
           <ul>
@@ -191,40 +196,43 @@
           </ul>
         </div>
       </section>
-  
+    </div>
+    
+    <div class="right-column">
       <section class="section">
         <h2>Skills</h2>
         <div class="section-content">
-          <div class="skills">
-            <div class="skill-category">
-              <h3>Operating Systems</h3>
-              <ul>
-                <li>Linux</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Databases</h3>
-              <ul>
-                <li>SQL</li>
-                <li>Amazon Dynamodb</li>
-              </ul>
-            </div>
-            <div class="skill-category">
-              <h3>Development</h3>
-              <ul>
-                <li>Developer</li>
-                <li>Git</li>
-                <li>Docker</li>
-                <li>.NET Framework</li>
-                <li>Java</li>
-                <li>Python (Programming Language)</li>
-                <li>Eclipse</li>
-                <!-- Add more skills as needed -->
-              </ul>
-            </div>
+          <div class="skill-category">
+            <h3>Operating Systems</h3>
+            <ul class="skills">
+              <li>Linux</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <ul class="skills">
+              <li>SQL</li>
+              <li>Amazon Dynamodb</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Development</h3>
+            <ul class="skills">
+              <li>Developer</li>
+              <li>Git</li>
+              <li>Docker</li>
+              <li>.NET Framework</li>
+              <li>Java</li>
+              <li>Python (Programming Language)</li>
+              <li>Eclipse</li>
+              <!-- Add more skills as needed -->
+            </ul>
           </div>
         </div>
       </section>
     </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>
